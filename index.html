@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My weather app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <h1>hiiiiiii</h1> -->
+    <div class="srch">
+      <center>
+        <form id="cityForm">
+          <input
+            class="search"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Type the city..."
+          />
+          <button class="but" type="submit">Search</button>
+        </form>
+      </center>
+    </div>
+    <div class="city">
+      <center>
+        <h1 class="cname" id="loc"></h1>
+      </center>
+      <p id="error"></p>
+    </div>
+    <div class="weather">
+      <img
+        class="img"
+        src="./img/86940-forecasting-weather-sky-atmosphere-rain-png-download-free.png"
+        alt="img"
+      />
+      <div class="degree">
+      <h1 class="deg" id="deg"></h1>
+      <h1 class="degre" id="degre"></h1>
+    </div>
+    </div>
+
+    <div class="d_T">
+      <center>
+        <div class="time">
+          <h3 id="hour"></h3>
+          <h3><span>:</span></h3>
+          <h3 id="min"></h3>
+          <h3><span>:</span></h3>
+          <h3 id="sec"></h3>
+          <h3 id="period"></h3>
+        </div>
+        <br />
+        <div class="day">
+          <h1 id="day"></h1>
+          <h1 id="mon"></h1>
+          <h1 id="year"></h1>
+        </div>
+      </center>
+    </div>
+    <!-- <script src="./api.js"></script> -->
+    <script src="./date_time.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
